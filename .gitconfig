@@ -1,0 +1,16 @@
+[user]
+	name = Kale Franz
+	email = kale@franz.io
+[push]
+	default = upstream
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore_global
+[color]
+	ui = true
+[diff]
+	diff-algorithm = patience
+[alias]
+	c = commit -m
+	ca = commit --amend
