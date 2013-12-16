@@ -5,7 +5,7 @@
 # in this repo
 #################################################
 
-FILENAMES=".gitconfig .gitignore_global .zpreztorc .zshrc"
+FILENAMES=".gitconfig .gitignore_global .zshenv .zpreztorc .zshrc"
 
 # http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

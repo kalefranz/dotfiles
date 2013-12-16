@@ -10,6 +10,7 @@ fi
 
 alias localip='ifconfig | grep -E -A3 "e(th|n)0" | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1"'
 alias externalip='echo $(curl -s --connect-timeout 3 http://ipecho.net/plain)'
+alias ips='echo "local:" $(localip) " external:" $(echo $(curl -s --connect-timeout 2 http://ipecho.net/plain))'
 
 
 
@@ -19,6 +20,16 @@ zle -N insert-sudo insert_sudo
 bindkey "^[s" insert-sudo
 
 alias gs='git status'
+
+
+
+# prepend PATH
+export PATH=$HOME/anaconda/bin:$PATH
+
+# postpend PATH
+export PATH=$PATH:$JAVA_HOME/bin:$HOME/bin
+
+
 
 
 #####
