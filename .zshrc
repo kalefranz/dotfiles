@@ -24,12 +24,20 @@ alias gs='git status'
 
 
 # prepend PATH
-export PATH=$HOME/anaconda/bin:$PATH
+#export PATH=$HOME/anaconda/bin:$PATH
 
 # postpend PATH
 export PATH=$PATH:$JAVA_HOME/bin:$HOME/bin
 
+# python virtualenv
+export WORKON_HOME=/opt/.virtualenvs
+export PROJECT_HOME=$HOME/.virtualenv_projects
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+source /usr/local/bin/virtualenvwrapper.sh
 
+# pyenv
+export PYENV_ROOT="/opt/.pyenv"
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 
 #####
