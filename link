@@ -14,12 +14,12 @@ LINK_HOME=${1:-$HOME}
 
 for filename in $FILENAMES
 do
-	rm -f $HOME/$filename
-	ln -s $SCRIPT_DIR/$filename $HOME/$filename
+	rm -f $LINK_HOME/$filename
+	ln -s $SCRIPT_DIR/$filename $LINK_HOME/$filename
 done
 
-rm -f $HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
-ln -s $SCRIPT_DIR/prompt_kale_setup $HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
+rm -f $LINK_HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
+ln -s $SCRIPT_DIR/prompt_kale_setup $LINK_HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
 
 sudo -p 'elevate privileges for symlinks in /etc
 sudo password: ' rm -f /etc/zlogin
