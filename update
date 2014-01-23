@@ -1,0 +1,9 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # the directory this file is in
+
+cd $SCRIPT_DIR
+
+git reset HEAD --hard
+git pull
+./link $1
