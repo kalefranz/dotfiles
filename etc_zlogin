@@ -1,1 +1,1 @@
-echo "local:" $(localip) " external:" $(echo $(curl -s --connect-timeout 2 http://ipecho.net/plain))
+echo "local:" $(localip) " external:" $(externalip)

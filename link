@@ -21,3 +21,4 @@ ln -s -f $SCRIPT_DIR/prompt_kale_setup $LINK_HOME/.zprezto/modules/prompt/functi
 
 sudo -p 'elevate privileges for symlinks in /etc
 sudo password: ' ln -s -f $SCRIPT_DIR/etc_zlogin /etc/zlogin
+sudo ln -s -f $SCRIPT_DIR/etc_zshenv /etc/zshenv
