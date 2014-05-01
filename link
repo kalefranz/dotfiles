@@ -5,7 +5,7 @@
 # in this repo
 #################################################
 
-LINK_THESE_FILENAMES=".gitconfig .gitignore_global .zshenv .zpreztorc .zshrc"
+LINK_THESE_FILENAMES=".gitconfig .gitignore_global .zlogin .zshenv .zpreztorc .zshrc"
 
 # http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # the directory this file is in
@@ -14,11 +14,14 @@ LINK_HOME=${1:-$HOME}
 
 for filename in $LINK_THESE_FILENAMES
 do
-	ln -s -f $SCRIPT_DIR/$filename $LINK_HOME/$filename
+    ln -s -f $SCRIPT_DIR/$filename $LINK_HOME/$filename
 done
 
 ln -s -f $SCRIPT_DIR/prompt_kale_setup $LINK_HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
 
+if [ -e $SCRIPT_DIR/.zshrc.include ]; then
+    ln -s -f $SCRIPT_DIR/.zshrc.include $LINK_HOME/.zshrc.include
+fi
+
 sudo -p 'elevate privileges for symlinks in /etc
-sudo password: ' ln -s -f $SCRIPT_DIR/etc_zlogin /etc/zlogin
-sudo ln -s -f $SCRIPT_DIR/etc_zshenv /etc/zshenv
+sudo password: ' sudo ln -s -f $SCRIPT_DIR/etc_zshenv /etc/zshenv
