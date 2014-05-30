@@ -18,8 +18,8 @@ alias ips='echo "local:" $(localip) " external:" $(externalip)'
 alias gs='git status'
 alias ga='git add'
 alias gaa='cd "$(git rev-parse --show-toplevel)" && git add --all'
-alias gc='git commit --message'
-alias gc='git commit --amend'
+alias gcm='git commit --message'
+alias gca='git commit --amend'
 
 # Include machine specific options (i.e. one for work, one for home, one for VPS
 # hosts, etc.)

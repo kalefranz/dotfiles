@@ -6,6 +6,7 @@
 [credential]
 	helper = osxkeychain
 [core]
+	editor = vi
 	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
