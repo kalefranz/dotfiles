@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eu
 
 #################################################
 # Create all the relevant symlinks for file
@@ -25,3 +25,12 @@ fi
 
 sudo -p 'elevate privileges for symlinks in /etc
 sudo password: ' sudo ln -s -f $SCRIPT_DIR/etc_zshenv /etc/zshenv
+
+
+function link_anaconda() {
+	echo "linking anaconda python in /usr/local/anaconda/bin"
+	for f in $(ls /usr/local/anaconda/bin); do
+		sudo ln -fs "/usr/local/anaconda/bin/$f" "/usr/local/bin/$f"
+	done	
+}
+link_anaconda
