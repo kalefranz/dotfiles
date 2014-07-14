@@ -1,4 +1,4 @@
-#!/bin/bash -eu
+#!/bin/bash -eux
 
 #################################################
 # Create all the relevant symlinks for file
@@ -9,22 +9,28 @@ LINK_THESE_FILENAMES=".gitconfig .gitignore_global .zlogin .zshenv .zpreztorc .z
 
 # http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # the directory this file is in
+cd $SCRIPT_DIR
 
-LINK_HOME=${1:-$HOME}
 
-for filename in $LINK_THESE_FILENAMES
-do
-    ln -s -f $SCRIPT_DIR/$filename $LINK_HOME/$filename
+files_from_home=$(cd files_from_home && find . -name '*' -type f)
+files_from_root=$(cd files_from_root && find . -name '*' -type f)
+
+for file in files_from_home; do
+	local fullfile=${file#"files_from_home/"}  # strip "files_from_home/"
+	local file_dir=$(basename file)
+	local file_name="${file##*/}"
+	mkdir -p "$HOME/$file_dir"
+    ln -s -f "$SCRIPT_DIR/files_from_home/$file" "$HOME/$file_dir/$file_name"
 done
 
-ln -s -f $SCRIPT_DIR/prompt_kale_setup $LINK_HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
+ln -s -f $SCRIPT_DIR/files_other/prompt_kale_setup $LINK_HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
 
 if [ -e $SCRIPT_DIR/.zshrc.include ]; then
-    ln -s -f $SCRIPT_DIR/.zshrc.include $LINK_HOME/.zshrc.include
+    ln -s -f $SCRIPT_DIR/files_from_home/.zshrc.include $LINK_HOME/.zshrc.include
 fi
 
 sudo -p 'elevate privileges for symlinks in /etc
-sudo password: ' sudo ln -s -f $SCRIPT_DIR/etc_zshenv /etc/zshenv
+sudo password: ' ln -s -f $SCRIPT_DIR/files_from_root/etc_zshenv /etc/zshenv
 
 
 # function link_anaconda() {

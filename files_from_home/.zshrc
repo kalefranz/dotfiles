@@ -28,3 +28,6 @@ if [ -e $HOME/.zshrc.include ]; then
 fi
 
 
+
+PERL_MB_OPT="--install_base \"/Users/kale/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/kale/perl5"; export PERL_MM_OPT;
