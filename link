@@ -12,21 +12,36 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # the directory t
 cd $SCRIPT_DIR
 
 
-files_from_home=$(cd files_from_home && find . -name '*' -type f)
-files_from_root=$(cd files_from_root && find . -name '*' -type f)
+# files_from_home=$(find files_from_home -name '*' -type f)
+# files_from_root=$(find files_from_root -name '*' -type f)
 
-for file in files_from_home; do
-	local fullfile=${file#"files_from_home/"}  # strip "files_from_home/"
-	local file_dir=$(basename file)
-	local file_name="${file##*/}"
-	mkdir -p "$HOME/$file_dir"
-    ln -s -f "$SCRIPT_DIR/files_from_home/$file" "$HOME/$file_dir/$file_name"
-done
+# for file in files_from_home; do
+# 	local fullfile=${file#"files_from_home/"}  # strip "files_from_home/"
+# 	local file_dir=$(basename file)
+# 	local file_name="${file##*/}"
+# 	mkdir -p "$HOME/$file_dir"
+#     ln -s -f "$SCRIPT_DIR/files_from_home/$file" "$HOME/$file_dir/$file_name"
+# done
 
-ln -s -f $SCRIPT_DIR/files_other/prompt_kale_setup $LINK_HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
+
+link_folder() {
+	local folder_name=$1
+	file_list=$(cd "$folder_name" && find . -name '*' -type f)
+	for file in file_list; do
+		local file_dir=$(dirname file)
+		local file_name=$(basename file)
+		mkdir -p "$HOME/$file_dir"
+	    ln -s -f "$SCRIPT_DIR/$file" "$HOME/$file_dir/$file_name"
+	done
+}
+link_folder files_from_home
+
+
+
+ln -s -f $SCRIPT_DIR/files_other/prompt_kale_setup $HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
 
 if [ -e $SCRIPT_DIR/.zshrc.include ]; then
-    ln -s -f $SCRIPT_DIR/files_from_home/.zshrc.include $LINK_HOME/.zshrc.include
+    ln -s -f $SCRIPT_DIR/files_from_home/.zshrc.include $HOME/.zshrc.include
 fi
 
 sudo -p 'elevate privileges for symlinks in /etc
