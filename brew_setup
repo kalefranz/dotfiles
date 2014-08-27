@@ -1,0 +1,171 @@
+#!/bin/bash -eu
+
+
+#############
+# This script should install all the needed dependencies for vagrant
+
+
+
+
+prompt_bold="$(tput bold)"
+prompt_reset="$(tput sgr0)"
+
+prompt_black="$(tput setaf 0)"
+prompt_red="$(tput setaf 1)"
+prompt_green="$(tput setaf 2)"
+prompt_yellow="$(tput setaf 3)"
+prompt_blue="$(tput setaf 4)"
+prompt_purple="$(tput setaf 5)"
+prompt_cyan="$(tput setaf 6)"
+prompt_white="$(tput setaf 7)"
+
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # the directory this file is in
+cd ${SCRIPT_DIR}
+
+
+sudo -p "${prompt_bold}${prompt_white}elevated privileges are required to run this script
+enter sudo password: ${prompt_reset}" ln -s -f $SCRIPT_DIR/files_from_root/etc_zshenv /etc/zshenv
+
+# install command-line tools
+if ! $(xcode-select -p | grep -q "CommandLineTools"); then
+    xcode-select --install
+fi
+echo "${prompt_green}✓ Xcode command-line tools are installed${prompt_reset}"
+
+# install brew
+if ! which brew > /dev/null; then
+    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+fi
+echo "${prompt_green}✓ homebrew is installed${prompt_reset}"
+
+# enforce brew-able environment
+echo "${prompt_white}Updating homebrew.${prompt_reset}"
+brew update
+brew doctor
+
+# install ruby environment
+if ! $(brew list | grep -q "rbenv$"); then
+    brew install rbenv
+    echo "${prompt_bold}${prompt_white}Add the following two lines to your ~/.bash_profile file (or zsh equivalent), then hit return to continue${prompt_reset}"
+    echo "${prompt_blue}export RBENV_ROOT=/usr/local/var/rbenv${prompt_reset}"
+    export RBENV_ROOT=/usr/local/var/rbenv
+    echo "${prompt_blue}if which rbenv > /dev/null; then eval \"$(rbenv init -)\"; fi${prompt_reset}"
+    if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+    read dummyvar
+    rbenv global system
+fi
+if ! $(brew list | grep -q "ruby-build"); then
+    brew install ruby-build
+fi
+if ! $(brew list | grep -q "rbenv-gem-rehash"); then
+    brew install rbenv-gem-rehash
+fi
+echo "${prompt_green}✓ rbenv ruby-build rbenv-gem-rehash are installed${prompt_reset}"
+echo "${prompt_green}✓ system ruby set as global version ${prompt_reset}"
+
+## install ruby
+#ruby_version="2.1.2"
+#if ! $(rbenv versions | grep -q "$ruby_version"); then
+#    rbenv install "$ruby_version"
+#    rbenv rehash
+#fi
+#echo "${prompt_green}✓ ruby ${ruby_version} is installed ${prompt_reset}"
+#if ! $(rbenv versions | grep -q "$ruby_version"); then
+#    rbenv global "$ruby_version"
+#fi
+#echo "${prompt_green}✓ ruby ${ruby_version} set as global version ${prompt_reset}"
+
+# install anaconda python
+install_anaconda() {
+    read -p "${prompt_bold}${prompt_white}Would you like to install it now? (y/[N])${prompt_reset}  " yn
+    if [[ "$yn" =~ .*[yY].* ]]; then
+        anaconda_filename=$(curl -s http://repo.continuum.io/archive/index.html | grep MacOSX | gawk 'match($0, /">(.*)\.sh<\/a>/, ary) {print ary[1]}' | tail -1)
+        echo "${prompt_yellow}downloading ${anaconda_filename}${prompt_reset} to /tmp"
+        curl -o /tmp/${anaconda_filename}.sh http://repo.continuum.io/archive/${anaconda_filename}.sh
+        bash /tmp/${anaconda_filename}.sh -b -p /usr/local/anaconda
+        echo "${prompt_green}✓ Anaconda python installed to /usr/local/anaconda${prompt_reset}"
+        echo "√${prompt_white}Add the following line to your ~/.bash_profile file (or zsh equivalent), then hit return to continue${prompt_reset}"
+        echo "${prompt_blue}export PATH=/usr/local/anaconda/bin:$PATH${prompt_reset}"
+        export PATH=/usr/local/anaconda/bin:$PATH
+        read dummyvar
+    fi
+}
+if [[ $(which python) == "/usr/bin/python" ]]; then
+    echo "${prompt_red}Your environment python is the OS X system python. Highly recommend installing Anaconda python.${prompt_reset}"
+    install_anaconda
+elif ! $(python --version 2>&1 | grep -q "Anaconda"); then
+    echo "${prompt_bold}${prompt_white}Your environment python is not Anaconda python.${prompt_reset}"
+    install_anaconda
+fi
+
+
+if ! $(brew tap | grep -q binary); then
+    brew tap homebrew/binary
+fi
+if ! $(brew tap | grep -q cask); then
+    brew tap caskroom/cask
+fi
+if ! $(brew list | grep -q brew-cask); then
+    brew install caskroom/cask/brew-cask
+fi
+
+if ! which vagrant > /dev/null; then
+    brew cask install vagrant
+fi
+echo "${prompt_green}✓ vagrant is installed${prompt_reset}"
+
+if ! test -f "/Applications/VMware Fusion.app/Contents/Library/vmware-vdiskmanager" \
+    && ! $(brew cask list | grep -q 'vmware-fusion' > /dev/null); then
+    brew cask install vmware-fusion
+fi
+echo "${prompt_green}✓ VMWare Fusion is installed${prompt_reset}"
+
+if ! $(vagrant plugin list | grep -q "vagrant-vmware-fusion"); then
+    vagrant plugin install vagrant-vmware-fusion
+fi
+if ! test -f $HOME/.vagrant.d/license-vagrant-vmware-fusion.lic; then
+    if ! test -f $HOME/Downloads/vagrant.lic; then
+      echo "${prompt_red}You must license your vagrant plugin${prompt_reset}"
+      echo "${prompt_bold}${prompt_white}Get the license file and put it at $HOME/Downloads/vagrant.lic${prompt_reset}"
+      echo "${prompt_white}then hit return to continue${prompt_reset}"
+      read dummyvar
+    fi
+    vagrant plugin license vagrant-vmware-fusion ~/Downloads/vagrant.lic
+fi
+echo "${prompt_green}✓ vagrant-vmware-fusion is installed and licensed${prompt_reset}"
+
+
+#if ! $(brew list | grep -q "dnsmasq"); then
+#    brew install dnsmasq
+#    mkdir -p /usr/local/etc
+#    cp /usr/local/opt/dnsmasq/dnsmasq.conf.example /usr/local/etc/dnsmasq.conf
+#    sudo cp -fv /usr/local/opt/dnsmasq/*.plist /Library/LaunchDaemons
+#    sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+#    sudo mkdir /etc/resolver
+#    sudo ln -s /usr/local/etc/dnsmasq.conf /etc/dnsmasq.conf
+#fi
+#echo "${prompt_green}✓ dnsmasq is installed${prompt_reset}"
+
+#if ! $(vagrant plugin list | grep -q "vagrant-dnsmasq"); then
+#    vagrant plugin install vagrant-dnsmasq
+#fi
+#echo "${prompt_green}✓ vagrant-dnsmasq is installed${prompt_reset}"
+
+if ! $(vagrant plugin list | grep -q "vagrant-hostsupdater"); then
+    vagrant plugin install vagrant-hostsupdater
+fi
+echo "${prompt_green}✓ vagrant-hostsupdater is installed${prompt_reset}"
+
+if ! $(vagrant plugin list | grep -q "vagrant-triggers"); then
+    vagrant plugin install vagrant-triggers
+fi
+echo "${prompt_green}✓ vagrant-triggers is installed${prompt_reset}"
+
+brew cleanup > /dev/null
+brew cask cleanup > /dev/null
+
+echo ""
+echo "${prompt_bold}${prompt_green}✓✓✓ your vagrant environment is ready ✓✓✓${prompt_reset}"
+echo ""
+echo ""
