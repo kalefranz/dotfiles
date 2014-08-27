@@ -1,13 +1,13 @@
 [user]
 	name = Kale Franz
-	email = kale@franz.io
+	email = kfranz@23andme.com
 [push]
 	default = tracking
 [credential]
 	helper = osxkeychain
 [core]
 	editor = vi
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/kfranz/.gitignore_global
 [color]
 	ui = true
 [diff]

@@ -24,17 +24,38 @@ cd $SCRIPT_DIR
 # done
 
 
-link_folder() {
-	local folder_name=$1
-	file_list=$(cd "$folder_name" && find . -name '*' -type f)
-	for file in file_list; do
-		local file_dir=$(dirname file)
-		local file_name=$(basename file)
-		mkdir -p "$HOME/$file_dir"
-	    ln -s -f "$SCRIPT_DIR/$file" "$HOME/$file_dir/$file_name"
-	done
+link_file_from_home() {
+	local fullname=$1
+	local file_dir=$(dirname "$fullname")
+	local file_name=$(basename "$fullname")
+	mkdir -p "$HOME/$file_dir"
+	ln -s -f "$SCRIPT_DIR/files_from_home/$fullname" "$HOME/$file_dir/$file_name"
 }
-link_folder files_from_home
+
+link_files_from_home() {
+	cd files_from_home
+	find . -name '*' -type f | while read fname; do
+  		link_file_from_home $fname
+	done
+	cd $SCRIPT_DIR
+}
+
+link_files_from_home
+
+# link_folder() {
+# 	local folder_name=$1
+	
+# 	find . -name \*.iso -print0 | xargs -0 process
+
+# 	file_list=$(cd "$folder_name" && find . -name '*' -type f)
+# 	for file in "$file_list"; do
+# 		local file_dir=$(dirname "$file")
+# 		local file_name=$(basename "$file")
+# 		mkdir -p "$HOME/$file_dir"
+# 	    ln -s -f "$SCRIPT_DIR/$file" "$HOME/$file_dir/$file_name"
+# 	done
+# }
+# link_folder files_from_home
 
 
 
