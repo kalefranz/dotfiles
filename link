@@ -44,7 +44,7 @@ link_files_from_home
 
 # link_folder() {
 # 	local folder_name=$1
-	
+
 # 	find . -name \*.iso -print0 | xargs -0 process
 
 # 	file_list=$(cd "$folder_name" && find . -name '*' -type f)
@@ -73,6 +73,6 @@ sudo password: ' ln -s -f $SCRIPT_DIR/files_from_root/etc_zshenv /etc/zshenv
 # 	echo "linking anaconda python in /usr/local/anaconda/bin"
 # 	for f in $(ls /usr/local/anaconda/bin); do
 # 		sudo ln -fs "/usr/local/anaconda/bin/$f" "/usr/local/bin/$f"
-# 	done	
+# 	done
 # }
 # link_anaconda
