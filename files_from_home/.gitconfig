@@ -3,6 +3,8 @@
 	email = kfranz@23andme.com
 [push]
 	default = tracking
+[pull]
+	rebase = true
 [credential]
 	helper = osxkeychain
 [core]
