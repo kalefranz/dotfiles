@@ -1,0 +1,38 @@
+#!/usr/bin/env python
+
+import json
+import sys
+import urllib2
+
+IP_URL = 'http://ipinfo.io/json'
+EXCLUDE_HOSTNAMES = ("No Hostname", )
+
+TIMEOUT = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
+
+
+def get_ip_data():
+    response = urllib2.urlopen(IP_URL, timeout=TIMEOUT)
+    return json.loads(response.read())
+
+
+def format_data(ip_data):
+    data = [ip_data['ip']]
+    hostname_exclude = ip_data['hostname'] not in EXCLUDE_HOSTNAMES
+    if hostname_exclude:
+        data.append(ip_data['hostname'])
+    data.append(ip_data['org'])
+    data.append(ip_data['city'])
+    space = 3 * ' '
+    return space.join(data)
+
+
+def main():
+    try:
+        ip_data = get_ip_data()
+        print format_data(ip_data)
+    except urllib2.URLError:
+        print 'ip fetch timeout'
+
+
+if __name__ == '__main__':
+    main()

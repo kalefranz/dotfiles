@@ -21,10 +21,11 @@ alias gaa='cd "$(git rev-parse --show-toplevel)" && git add --all'
 alias gcm='git commit --message'
 alias gca='git commit --amend'
 alias gcmm='git commit -m "$(curl -s http://whatthecommit.com/index.txt)"'
+alias gus='git pull --rebase && git submodule update --init --recursive'
 
 # Include machine specific options (i.e. one for work, one for home, one for VPS
 # hosts, etc.)
-if [ -e $HOME/.zshrc.include ]; then
+if test -e $HOME/.zshrc.include; then
     source $HOME/.zshrc.include
 fi
 

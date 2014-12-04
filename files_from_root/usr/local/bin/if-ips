@@ -1,0 +1,72 @@
+#!/usr/bin/env python
+
+from collections import deque, defaultdict
+import re
+import subprocess
+
+
+IGNORE_INTERFACES = ('vmnet', 'lo')
+
+IP_REGEX_STR = r'\b(?:(?:2(?:[0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9])\.){3}(?:(?:2([0-4][0-9]|5[0-5])|[0-1]?[0-9]?[0-9]))\b'
+IP_REGEX = re.compile(IP_REGEX_STR)
+
+def get_ifconfig_lines():
+    p = subprocess.Popen('ifconfig', stdout=subprocess.PIPE)
+    stdout = p.communicate()[0]
+    is_empty_line = lambda x: bool(x.strip())
+    stdout_lines = filter(is_empty_line, stdout.split('\n'))
+    return deque(stdout_lines)
+
+
+def convert_lines_to_map(stdout_lines):
+    iface_map = dict()
+    strip_all = lambda x: x.strip(' :').strip()
+    first_line = lambda x: not x.startswith((' ', '\t'))
+    key = None
+    while len(stdout_lines):
+        line = stdout_lines.popleft()
+        if first_line(line):
+            key, val = map(strip_all, line.split(None, 1))
+            iface_map[key] = [val]
+        else:
+            iface_map[key].append(line.strip())
+    return iface_map
+
+
+def filter_interfaces_and_non_inet(iface_map):
+    has_inet_map = defaultdict(list)
+    for key, val in iface_map.iteritems():
+        if key.startswith(IGNORE_INTERFACES):
+            continue
+        for line in val:
+            if 'inet' in line:
+                has_inet_map[key].append(line)
+    return has_inet_map
+
+
+def pick_ip4s(inet_map):
+    ip4_map = dict()
+    for key, val in inet_map.iteritems():
+        for line in val:
+            match = IP_REGEX.search(line)
+            if match:
+                ip4_map[key] = match.group(0)
+    return ip4_map
+
+
+def format_output(ip4_map):
+    space = ' ' * 5
+    return space.join(["%s: %s" % (iface, ip4_map[iface])
+                       for iface in sorted(ip4_map.keys())])
+
+
+def main():
+    stdout_lines = get_ifconfig_lines()
+    iface_map = convert_lines_to_map(stdout_lines)
+    has_inet_map = filter_interfaces_and_non_inet(iface_map)
+    ip4_map = pick_ip4s(has_inet_map)
+    print format_output(ip4_map)
+
+
+if __name__ == "__main__":
+    main()
