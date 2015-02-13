@@ -4,7 +4,7 @@ import json
 import sys
 import urllib2
 
-IP_URL = 'http://ipinfo.io/json'
+IP_URL = 'https://ipinfo.io/json'
 EXCLUDE_HOSTNAMES = ("No Hostname", )
 
 TIMEOUT = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
