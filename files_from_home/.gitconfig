@@ -2,13 +2,15 @@
 	name = Kale Franz
 	email = kfranz@23andme.com
 [push]
-	default = tracking
+	default = current
 [pull]
 	rebase = true
+[branch]
+	autosetuprebase = always
 [credential]
 	helper = osxkeychain
 [core]
-	editor = vi
+	editor = vim
 	excludesfile = /Users/kfranz/.gitignore_global
 [color]
 	ui = true
@@ -23,5 +25,3 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[branch]
-	autosetuprebase = always
