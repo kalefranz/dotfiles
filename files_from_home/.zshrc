@@ -7,7 +7,7 @@ alias localip='/sbin/ifconfig | grep -E -A3 "e(th|n)0" | grep -Eo "inet (addr:)?
 
 function externalip () {
     TIMEOUT=${1:=3}  # default to 3 second timeout on http connection
-	JSON=$(curl -s -m ${TIMEOUT} http://ipinfo.io/json)
+	JSON=$(curl -s -m ${TIMEOUT} https://ipinfo.io/json)
 	IP=$(echo $JSON | gawk 'match($0, /"ip":\s*"([0-9.]+)"/, ary) {print ary[1]}')
 	ORG=$(echo $JSON | gawk 'match($0, /"org":\s*"([^"]+)"/, ary) {print ary[1]}')
 	echo $IP $ORG
@@ -33,3 +33,7 @@ fi
 
 PERL_MB_OPT="--install_base \"/Users/kale/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/kale/perl5"; export PERL_MM_OPT;
+
+export EDITOR=vim
+
+alias ssha='ssh -i ~/.ssh/ansible-insecure ansible@'
