@@ -4,6 +4,7 @@
 [push]
 	default = current
 [pull]
+	default = current
 	rebase = true
 [branch]
 	autosetuprebase = always
@@ -11,17 +12,47 @@
 	helper = osxkeychain
 [core]
 	editor = vim
-	excludesfile = /Users/kfranz/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = true
 [diff]
 	diff-algorithm = patience
-[alias]
-	c = commit -m
-	ca = commit --amend
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[merge]
+    # make --no-ff the default behavior
+    ff = false
+[rerere]
+	enabled = true
+[alias]
+    # compact git log graph
+    lol = log --oneline --decorate --graph --all
+ 
+    # reset HEAD --hard leaving a dangling commit for current changes to enhance safety
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+ 
+    # git commit all with message
+    ca = !git add -A && git commit -m
+ 
+    # git commit shortcut
+    ci = commit
+ 
+    # git checkout shortcut
+    co = checkout
+ 
+    # quick status
+    st = status -s
+ 
+    # instead of git stash and git stash pop, use git save and git undo when switching branches
+    save = !git add -A && git commit -m 'SAVEPOINT'
+    popsave = reset HEAD~1 --mixed
+ 
+    # aliases from http://haacked.com/archive/2014/07/28/github-flow-aliases/
+    # git bdone will clean up any merged branches and put you back on the develop branch
+    up = !git fetch --all && [[ -z $(git status --porcelain -uno) ]] && git pull --rebase || git save && git pull --rebase && git popsave
+    bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
+    bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
