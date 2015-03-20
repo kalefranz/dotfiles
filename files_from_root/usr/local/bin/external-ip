@@ -7,7 +7,7 @@ import urllib2
 IP_URL = 'http://ipinfo.io/json'
 EXCLUDE_HOSTNAMES = ("No Hostname", )
 
-TIMEOUT = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
+TIMEOUT = float(sys.argv[1]) if len(sys.argv) > 1 else 0.65
 
 
 def get_ip_data():
@@ -20,8 +20,10 @@ def format_data(ip_data):
     # hostname_exclude = ip_data['hostname'] not in EXCLUDE_HOSTNAMES
     # if hostname_exclude:
     #     data.append(ip_data['hostname'])
-    data.append(ip_data['org'])
-    data.append(ip_data['city'])
+    if ip_data['org']:
+        data.append(ip_data['org'])
+    if ip_data['city']:
+        data.append(ip_data['city'])
     space = 3 * ' '
     return space.join(data)
 
@@ -29,7 +31,7 @@ def format_data(ip_data):
 def main():
     try:
         ip_data = get_ip_data()
-        print format_data(ip_data)
+        print "external:", format_data(ip_data)
     except urllib2.URLError:
         print 'ip fetch timeout'
 
