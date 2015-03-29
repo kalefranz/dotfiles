@@ -12,7 +12,7 @@
 	helper = osxkeychain
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/kfranz/.gitignore_global
 [color]
 	ui = true
 [diff]
@@ -47,6 +47,6 @@
  
     # aliases from http://haacked.com/archive/2014/07/28/github-flow-aliases/
     # git bdone will clean up any merged branches and put you back on the develop branch
-    up = !git fetch --all && [[ -z $(git status --porcelain -uno) ]] && git pull --rebase || git save && git pull --rebase && git popsave
+    up = !git fetch --all && [[ -z $(git status --porcelain -uno) ]] && git pull --rebase
     bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
     bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"

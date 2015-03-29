@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-
 import json
+import socket
 import sys
 import urllib2
 
@@ -32,7 +32,7 @@ def main():
     try:
         ip_data = get_ip_data()
         print "external:", format_data(ip_data)
-    except urllib2.URLError:
+    except (urllib2.URLError, socket.timeout):
         print 'ip fetch timeout'
 
 
