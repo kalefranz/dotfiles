@@ -29,7 +29,6 @@
     <option name="names">
       <map>
         <entry key="$USER_HOME$/ttam/ansible" value="ansible, cron" />
-        <entry key="$USER_HOME$/ttam/hookhandler" value="hookhandler, auxlib..." />
         <entry key="$USER_HOME$/ttam/tropo" value="tropo, 23vpc..." />
       </map>
     </option>
@@ -53,7 +52,7 @@
               <option name="build" value="PY-143.1184" />
               <option name="productionCode" value="PY" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1450277058849" />
+              <option name="projectOpenTimestamp" value="1450321465859" />
               <option name="buildTimestamp" value="1449554400000" />
             </RecentProjectMetaInfo>
           </value>
@@ -64,7 +63,7 @@
               <option name="build" value="PY-143.1184" />
               <option name="productionCode" value="PY" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1450298692905" />
+              <option name="projectOpenTimestamp" value="1450321469686" />
               <option name="buildTimestamp" value="1449554400000" />
             </RecentProjectMetaInfo>
           </value>
@@ -75,7 +74,7 @@
               <option name="build" value="PY-143.1184" />
               <option name="productionCode" value="PY" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1450277365859" />
+              <option name="projectOpenTimestamp" value="1450321468187" />
               <option name="buildTimestamp" value="1449554400000" />
             </RecentProjectMetaInfo>
           </value>
