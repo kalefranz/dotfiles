@@ -1,0 +1,97 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/ttam/product" />
+        <option value="$USER_HOME$/ttam/transcomm" />
+        <option value="$USER_HOME$/ttam/hookhandler" />
+        <option value="$USER_HOME$/ttam/ansible" />
+        <option value="$USER_HOME$/ttam/you" />
+        <option value="$USER_HOME$/23andme/ansible" />
+        <option value="$USER_HOME$/23andme/product" />
+        <option value="$USER_HOME$/projects/conda-build" />
+        <option value="$USER_HOME$/ttam/tropo" />
+        <option value="$USER_HOME$/ttam/23vpc" />
+        <option value="$USER_HOME$/ttam/cf-envb" />
+        <option value="$USER_HOME$/23andme/you" />
+        <option value="$USER_HOME$/projects/auxlib" />
+        <option value="$USER_HOME$/ttam/cloudformation-environmentbase" />
+        <option value="$USER_HOME$/ttam/putz" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/ttam/hookhandler" />
+        <option value="$USER_HOME$/ttam/transcomm" />
+        <option value="$USER_HOME$/ttam/product" />
+      </list>
+    </option>
+    <option name="names">
+      <map>
+        <entry key="$USER_HOME$/ttam/ansible" value="ansible, cron" />
+        <entry key="$USER_HOME$/ttam/hookhandler" value="hookhandler, auxlib..." />
+        <entry key="$USER_HOME$/ttam/tropo" value="tropo, 23vpc..." />
+      </map>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/ttam/product" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/ttam/ansible">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1184" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1450277031253" />
+              <option name="buildTimestamp" value="1449554400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/ttam/hookhandler">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1184" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1450277058849" />
+              <option name="buildTimestamp" value="1449554400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/ttam/product">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1184" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1450298692905" />
+              <option name="buildTimestamp" value="1449554400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/ttam/transcomm">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1184" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1450277365859" />
+              <option name="buildTimestamp" value="1449554400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/ttam/you">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1184" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1449854372404" />
+              <option name="buildTimestamp" value="1449554400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

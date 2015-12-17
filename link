@@ -60,6 +60,13 @@ link_files_from_root
 
 
 #################################################
+# Directories
+#################################################
+ln -sf "$SCRIPT_DIR/directories/PyCharm50/" ~/Library/Preferences/
+
+
+
+#################################################
 # Other links
 #################################################
 ln -s -f $SCRIPT_DIR/files_other/prompt_kale_setup $HOME/.zprezto/modules/prompt/functions/prompt_kale_setup

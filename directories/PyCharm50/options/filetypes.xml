@@ -1,0 +1,50 @@
+<application>
+  <component name="FileTypeManager" version="16">
+    <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
+    <extensionMap>
+      <mapping ext="j2" type="Jinja2" />
+      <mapping pattern="sync_centos5_to_s3" type="PLAIN_TEXT" />
+      <mapping pattern="sandbox" type="PLAIN_TEXT" />
+      <mapping pattern="grab-interface" type="PLAIN_TEXT" />
+      <mapping pattern="clean" type="PLAIN_TEXT" />
+      <mapping pattern="Makefile" type="PLAIN_TEXT" />
+      <mapping pattern="you-prod" type="PLAIN_TEXT" />
+      <mapping pattern="grab-ssh-pubkey" type="PLAIN_TEXT" />
+      <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
+      <mapping pattern="50-secure_path" type="PLAIN_TEXT" />
+      <mapping pattern="all" type="PLAIN_TEXT" />
+      <mapping pattern="colo" type="PLAIN_TEXT" />
+      <mapping pattern="corp" type="PLAIN_TEXT" />
+      <mapping pattern="uwsgi_params" type="PLAIN_TEXT" />
+      <mapping pattern="set-hostname" type="PLAIN_TEXT" />
+      <mapping pattern="you" type="PLAIN_TEXT" />
+      <mapping pattern="nat-monitor" type="PLAIN_TEXT" />
+      <mapping pattern="QA_PASSPHRASE" type="PLAIN_TEXT" />
+      <mapping pattern="sync_to_s3_23andme" type="PLAIN_TEXT" />
+      <mapping pattern="cron_sync_to_s3_conda_tech" type="PLAIN_TEXT" />
+      <mapping pattern="LICENSE" type="PLAIN_TEXT" />
+      <mapping pattern="consul" type="PLAIN_TEXT" />
+      <mapping pattern="aws" type="PLAIN_TEXT" />
+      <mapping pattern=".version" type="PLAIN_TEXT" />
+      <mapping pattern="sync_to_s3_tech" type="PLAIN_TEXT" />
+      <mapping pattern="deploy-you" type="PLAIN_TEXT" />
+      <mapping pattern="product" type="PLAIN_TEXT" />
+      <mapping pattern="ttam-sandbox" type="PLAIN_TEXT" />
+      <mapping pattern="logrotated-newrelic-sysmond" type="PLAIN_TEXT" />
+      <mapping ext="bash" type="PLAIN_TEXT" />
+      <mapping ext="com" type="PLAIN_TEXT" />
+      <mapping ext="net" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
+      <mapping ext="conf" type="PLAIN_TEXT" />
+      <mapping ext="cfg" type="PLAIN_TEXT" />
+      <mapping ext="override" type="PLAIN_TEXT" />
+      <mapping ext="in" type="PLAIN_TEXT" />
+      <mapping ext="io" type="PLAIN_TEXT" />
+      <mapping ext="aws" type="PLAIN_TEXT" />
+      <mapping ext="old" type="PLAIN_TEXT" />
+      <mapping ext="def" type="PLAIN_TEXT" />
+      <mapping ext="types" type="PLAIN_TEXT" />
+      <mapping pattern="gunicorn" type="Python" />
+    </extensionMap>
+  </component>
+</application>

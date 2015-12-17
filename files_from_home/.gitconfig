@@ -23,6 +23,8 @@
 [rerere]
 	enabled = true
 [alias]
+    yolo = !git commit -am "$(curl http://whatthecommit.com/index.txt)" && git push -f
+
     # compact git log graph
     lol = log --oneline --decorate --graph --all
  

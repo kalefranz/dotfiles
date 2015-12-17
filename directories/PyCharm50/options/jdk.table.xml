@@ -1,0 +1,437 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Remote Python 2.7.6 (vagrant:///Users/kfranz/ttam/transcomm/opt/ttam/venvs/transcomm/bin/python2.7)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.6" />
+      <homePath value="vagrant:///Users/kfranz/ttam/transcomm/opt/ttam/venvs/transcomm/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/-1810868300" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/ttam.transcomm-0.0.0.dev31+g849ffc7-py2.7.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/191467055" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/201544331" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/724150857" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/-154863933" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/-1744065361" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/1840630995" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional VAGRANT_FOLDER="$USER_HOME$/ttam/transcomm" INTERPRETER_PATH="/opt/ttam/venvs/transcomm/bin/python2.7" HELPERS_PATH="/home/vagrant/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="">
+        <PathMappingSettings>
+          <option name="pathMappings">
+            <list>
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/ttam.transcomm-0.0.0.dev31+g849ffc7-py2.7.egg" remote-root="/opt/ttam/venvs/transcomm/local/lib/python2.7/site-packages/ttam.transcomm-0.0.0.dev31+g849ffc7-py2.7.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/ttam.transcomm-0.0.0.dev31+g849ffc7-py2.7.egg" remote-root="/opt/ttam/venvs/transcomm/lib/python2.7/site-packages/ttam.transcomm-0.0.0.dev31+g849ffc7-py2.7.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/191467055" remote-root="/opt/ttam/venvs/transcomm/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/201544331" remote-root="/usr/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/724150857" remote-root="/usr/lib/python2.7/plat-x86_64-linux-gnu" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/-154863933" remote-root="/usr/lib/python2.7/lib-tk" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/-1744065361" remote-root="/opt/ttam/venvs/transcomm/local/lib/python2.7/site-packages" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1810868300/1840630995" remote-root="/opt/ttam/venvs/transcomm/lib/python2.7/site-packages" />
+            </list>
+          </option>
+        </PathMappingSettings>
+      </additional>
+    </jdk>
+    <jdk version="2">
+      <name value="Remote Python 2.7.6 (vagrant:///Users/kfranz/ttam/transcomm/opt/ttam/transcomm/ve/bin/python2)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.6" />
+      <homePath value="vagrant:///Users/kfranz/ttam/transcomm/opt/ttam/transcomm/ve/bin/python2" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/-1830221282" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional VAGRANT_FOLDER="$USER_HOME$/ttam/transcomm" INTERPRETER_PATH="/opt/ttam/transcomm/ve/bin/python2" HELPERS_PATH="/home/vagrant/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="">
+        <PathMappingSettings>
+          <option name="pathMappings">
+            <list>
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/534602306" remote-root="/vagrant" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/1061446408" remote-root="/opt/ttam/transcomm/ve/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/201544331" remote-root="/usr/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/724150857" remote-root="/usr/lib/python2.7/plat-x86_64-linux-gnu" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/-154863933" remote-root="/usr/lib/python2.7/lib-tk" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/-1277388024" remote-root="/opt/ttam/transcomm/ve/local/lib/python2.7/site-packages" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-1830221282/-1156926996" remote-root="/opt/ttam/transcomm/ve/lib/python2.7/site-packages" />
+            </list>
+          </option>
+        </PathMappingSettings>
+      </additional>
+    </jdk>
+    <jdk version="2">
+      <name value="Remote Python 2.7.5 (vagrant:///Users/kfranz/23andme/product/usr/local/bin/python)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.5" />
+      <homePath value="vagrant:///Users/kfranz/23andme/product/usr/local/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/-741652624" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/-940300373" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/-1484496089" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/249572967" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/673165940" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/726551399" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/-183260405" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/1357891031" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional VAGRANT_FOLDER="$USER_HOME$/23andme/product" INTERPRETER_PATH="/usr/local/bin/python" HELPERS_PATH="/usr/local/home/ttam/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="">
+        <PathMappingSettings>
+          <option name="pathMappings">
+            <list>
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/-940300373" remote-root="/usr/local/lib/python2.7/site-packages/matplotlib-1.3.1-py2.7-linux-x86_64.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/-1484496089" remote-root="/usr/local/lib/python2.7/site-packages/sphinxcontrib_napoleon-0.2.6-py2.7.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/249572967" remote-root="/usr/local/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/673165940" remote-root="/usr/local/lib/python2.7/plat-linux2" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/726551399" remote-root="/usr/local/lib/python2.7/lib-tk" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/-183260405" remote-root="/usr/local/lib/python2.7/site-packages" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-741652624/1357891031" remote-root="/usr/local/lib/python2.7/site-packages/newrelic-2.14.0.11" />
+            </list>
+          </option>
+        </PathMappingSettings>
+      </additional>
+    </jdk>
+    <jdk version="2">
+      <name value="Remote Python 2.7.5 (vagrant:///Users/kfranz/ttam/product/usr/local/bin/python)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.5" />
+      <homePath value="vagrant:///Users/kfranz/ttam/product/usr/local/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/-863505542" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/-940300373" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/-1484496089" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/1224146163" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/249572967" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/673165940" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/726551399" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/-183260405" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/1357891031" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional VAGRANT_FOLDER="$USER_HOME$/ttam/product" INTERPRETER_PATH="/usr/local/bin/python" HELPERS_PATH="/usr/local/home/ttam/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="">
+        <PathMappingSettings>
+          <option name="pathMappings">
+            <list>
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/-940300373" remote-root="/usr/local/lib/python2.7/site-packages/matplotlib-1.3.1-py2.7-linux-x86_64.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/-1484496089" remote-root="/usr/local/lib/python2.7/site-packages/sphinxcontrib_napoleon-0.2.6-py2.7.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/1224146163" remote-root="/kit23/workspace/transcomm" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/249572967" remote-root="/usr/local/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/673165940" remote-root="/usr/local/lib/python2.7/plat-linux2" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/726551399" remote-root="/usr/local/lib/python2.7/lib-tk" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/-183260405" remote-root="/usr/local/lib/python2.7/site-packages" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/-863505542/1357891031" remote-root="/usr/local/lib/python2.7/site-packages/newrelic-2.14.0.11" />
+            </list>
+          </option>
+        </PathMappingSettings>
+      </additional>
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.9 (~/anaconda/bin/python)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.9" />
+      <homePath value="$USER_HOME$/anaconda/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/lib-tk" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file://$USER_HOME$/.local/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/PIL" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/Sphinx-1.2.3-py2.7.egg" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/aeosa" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/cryptography-0.8-py2.7-macosx-10.5-x86_64.egg" />
+            <root type="simple" url="jar://$USER_HOME$/anaconda/lib/python2.7/site-packages/setuptools-18.0.1-py2.7.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/1114847365" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Remote Python 2.7.9 (vagrant:///Users/kfranz/ttam/product/usr/conda/bin/python)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.9" />
+      <homePath value="vagrant:///Users/kfranz/ttam/product/usr/conda/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/165005542" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/326586747" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/-1906911352" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/93407699" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/-1441408225" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/PyICU-0.9-py2.7-linux-x86_64.egg!/" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/bazaarvoice-2014.11.19-py2.7.egg!/" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/docopt-0.6.2-py2.7.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/1716117521" />
+            <root type="simple" url="jar://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/setuptools-15.2-py2.7.egg!/" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional VAGRANT_FOLDER="$USER_HOME$/ttam/product" INTERPRETER_PATH="/usr/conda/bin/python" HELPERS_PATH="/home/vagrant/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="">
+        <PathMappingSettings>
+          <option name="pathMappings">
+            <list>
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/326586747" remote-root="/usr/conda/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/-1906911352" remote-root="/usr/conda/lib/python2.7/plat-linux2" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/93407699" remote-root="/usr/conda/lib/python2.7/lib-tk" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/-1441408225" remote-root="/usr/conda/lib/python2.7/site-packages" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/PyICU-0.9-py2.7-linux-x86_64.egg" remote-root="/usr/conda/lib/python2.7/site-packages/PyICU-0.9-py2.7-linux-x86_64.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/bazaarvoice-2014.11.19-py2.7.egg" remote-root="/usr/conda/lib/python2.7/site-packages/bazaarvoice-2014.11.19-py2.7.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/docopt-0.6.2-py2.7.egg" remote-root="/usr/conda/lib/python2.7/site-packages/docopt-0.6.2-py2.7.egg" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/1716117521" remote-root="/usr/conda/lib/python2.7/site-packages/newrelic-2.50.0.39" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/165005542/setuptools-15.2-py2.7.egg" remote-root="/usr/conda/lib/python2.7/site-packages/setuptools-15.2-py2.7.egg" />
+            </list>
+          </option>
+        </PathMappingSettings>
+      </additional>
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.6 virtualenv at ~/ttam/transcomm/ve" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.11" />
+      <homePath value="$USER_HOME$/ttam/transcomm/ve/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/ttam/transcomm" />
+            <root type="simple" url="file://$USER_HOME$/ttam/transcomm/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/ttam/transcomm/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/transcomm/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/1561168562" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.10 virtualenv at ~/ttam/hookhandler/ve" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.10" />
+      <homePath value="$USER_HOME$/ttam/hookhandler/ve/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/ttam/hookhandler" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file://$USER_HOME$/ttam/hookhandler/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/ttam/hookhandler/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/lib-tk" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/hookhandler/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/-1145398273" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.10 virtualenv at ~/ttam/cf-envb/ve" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.10" />
+      <homePath value="$USER_HOME$/ttam/cf-envb/ve/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/ttam/cf-envb/src" />
+            <root type="simple" url="file://$USER_HOME$/ttam/cf-envb/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/ttam/cf-envb/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/cf-envb/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/2011590535" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.10 virtualenv at ~/ttam/tropo/ve" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.10" />
+      <homePath value="$USER_HOME$/ttam/tropo/ve/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/ttam/tropo" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file://$USER_HOME$/ttam/cf-envb/src" />
+            <root type="simple" url="file://$USER_HOME$/ttam/tropo/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/ttam/tropo/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/tropo/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/1757880438" />
+            <root type="simple" url="file://$USER_HOME$/.local/lib/python2.7/site-packages" />
+            <root type="simple" url="file:///usr/local/opt/libxslt/lib/python2.7/site-packages" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.10 (~/ttam/you/ve/bin/python)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.10" />
+      <homePath value="$USER_HOME$/ttam/you/ve/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file://$USER_HOME$/ttam/you/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/ttam/you/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/lib-tk" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/you/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/you/ve/lib/python2.7/site-packages/newrelic-2.54.0.41" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/154339668" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="$USER_HOME$/ttam/you" />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.10 virtualenv at ~/ttam/ansible/ve" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.10" />
+      <homePath value="$USER_HOME$/ttam/ansible/ve/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/ttam/ansible" />
+            <root type="simple" url="file://$USER_HOME$/projects/troposphere" />
+            <root type="simple" url="file://$USER_HOME$/ttam/ansible/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/ttam/ansible/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/lib-tk" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac" />
+            <root type="simple" url="file://$USER_HOME$/anaconda/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/ttam/ansible/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/1758471341" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Remote Python 2.7.5 Vagrant VM at ~/ttam/product (/kit23/site/23andme/websites/api/venv/bin/python)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.5" />
+      <homePath value="vagrant:///Users/kfranz/ttam/product/kit23/site/23andme/websites/api/venv/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/python_stubs/1366025450" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/337791143" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/249572967" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/673165940" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/726551399" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/1585108299" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/-782049032" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional VAGRANT_FOLDER="$USER_HOME$/ttam/product" INTERPRETER_PATH="/kit23/site/23andme/websites/api/venv/bin/python" HELPERS_PATH="/usr/home/ttam/.pycharm_helpers" INITIALIZED="false" VALID="true" SKELETONS_PATH="" VERSION="">
+        <PathMappingSettings>
+          <option name="pathMappings">
+            <list>
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/337791143" remote-root="/kit23/site/23andme/websites/api/venv/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/249572967" remote-root="/usr/local/lib/python2.7" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/673165940" remote-root="/usr/local/lib/python2.7/plat-linux2" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/726551399" remote-root="/usr/local/lib/python2.7/lib-tk" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/1585108299" remote-root="/kit23/site/23andme/websites/api/venv/lib/python2.7/site-packages" />
+              <mapping local-root="$USER_HOME$/Library/Caches/PyCharm40/remote_sources/1366025450/-782049032" remote-root="/kit23/site/23andme/websites/api/venv/lib/python2.7/site-packages/newrelic-2.54.0.41" />
+            </list>
+          </option>
+        </PathMappingSettings>
+      </additional>
+    </jdk>
+  </component>
+</application>
