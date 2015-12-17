@@ -72,7 +72,7 @@ ln -sf "$SCRIPT_DIR/directories/Sublime Text 3/Installed Packages" "$HOME/Librar
 #################################################
 # Other links
 #################################################
-ln -s -f $SCRIPT_DIR/files_other/prompt_kale_setup $HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
+# ln -s -f $SCRIPT_DIR/files_other/prompt_kale_setup $HOME/.zprezto/modules/prompt/functions/prompt_kale_setup
 
 
 
