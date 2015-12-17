@@ -13,7 +13,7 @@ function externalip () {
 	echo $IP $ORG
 }
 
-alias ips='echo "$(external-ip)"; echo "$(if-ips)"'
+alias ips='echo "$(external-ip)"; echo "$(ifips)"'
 
 alias gs='git status'
 alias ga='git add'

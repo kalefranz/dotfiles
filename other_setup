@@ -1,0 +1,5 @@
+#!/bin/bash -eu
+
+# disable gamed, supports protocls for the Game Kit framework
+# https://discussions.apple.com/thread/5521495?start=0&tstart=0
+sudo defaults write /System/Library/LaunchAgents/com.apple.gamed Disabled -bool true
