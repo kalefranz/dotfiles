@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"BlameHighlighter",
+		"BracketHighlighter",
+		"Diffy",
+		"EasyDiff",
+		"FileDiffs",
+		"GitGutter",
+		"HTMLBeautify",
+		"JsFormat",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Theme - Soda",
+		"Theme - SoDaReloaded",
+		"Theme - Sodarized",
+		"Theme - Spacegray",
+		"TrailingSpaces"
+	]
+}
