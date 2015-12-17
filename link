@@ -63,7 +63,8 @@ link_files_from_root
 # Directories
 #################################################
 ln -sf "$SCRIPT_DIR/directories/PyCharm50/" ~/Library/Preferences/
-
+ln -sf "$SCRIPT_DIR/directories/Sublime Text 3/Packages" "$HOME/Library/Application Support/Sublime Text 3/"
+ln -sf "$SCRIPT_DIR/directories/Sublime Text 3/Installed Packages" "$HOME/Library/Application Support/Sublime Text 3/"
 
 
 #################################################
