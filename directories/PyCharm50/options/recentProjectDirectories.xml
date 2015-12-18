@@ -19,20 +19,12 @@
         <option value="$USER_HOME$/ttam/putz" />
       </list>
     </option>
-    <option name="openPaths">
-      <list>
-        <option value="$USER_HOME$/ttam/hookhandler" />
-        <option value="$USER_HOME$/ttam/transcomm" />
-        <option value="$USER_HOME$/ttam/product" />
-      </list>
-    </option>
     <option name="names">
       <map>
         <entry key="$USER_HOME$/ttam/ansible" value="ansible, cron" />
         <entry key="$USER_HOME$/ttam/tropo" value="tropo, 23vpc..." />
       </map>
     </option>
-    <option name="lastPath" value="$USER_HOME$/ttam/product" />
     <option name="additionalInfo">
       <map>
         <entry key="$USER_HOME$/ttam/ansible">
