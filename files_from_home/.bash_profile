@@ -128,8 +128,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # ##############################
 # python
 # ##############################
-export PATH=$PATH:/conda/bin
 export PATH=$PATH:/usr/local/share/pypy
+export PATH=$PATH:/conda/bin
 
 
 # ##############################
