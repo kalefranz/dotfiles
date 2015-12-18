@@ -1,3 +1,16 @@
+_source_etc_profiled() {
+    # from CentOS 5 /etc/profile
+    for i in /etc/profile.d/*.sh ; do
+        if [ -r "$i" ]; then
+            if [ "${-#*i}" != "$-" ]; then
+                . $i
+            else
+                . $i >/dev/null 2>&1
+            fi
+        fi
+    done
+}
+
 # ##############################
 # environment
 # ##############################
