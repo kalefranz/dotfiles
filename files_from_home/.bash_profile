@@ -1,15 +1,21 @@
+# ##############################
+# /etc/profile.d/
+# ##############################
 _source_etc_profiled() {
-    # from CentOS 5 /etc/profile
-    for i in /etc/profile.d/*.sh ; do
-        if [ -r "$i" ]; then
-            if [ "${-#*i}" != "$-" ]; then
-                . $i
-            else
-                . $i >/dev/null 2>&1
+    if [[ -d /etc/profile.d/ ]]; then
+        # from CentOS 5 /etc/profile
+        for i in /etc/profile.d/*.sh ; do
+            if [ -r "$i" ]; then
+                if [ "${-#*i}" != "$-" ]; then
+                    . $i
+                else
+                    . $i >/dev/null 2>&1
+                fi
             fi
-        fi
-    done
+        done
+    fi
 }
+_source_etc_profiled
 
 # ##############################
 # environment
@@ -107,3 +113,15 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # python
 # ##############################
 export PATH=$PATH:/usr/local/share/pypy
+
+
+# ##############################
+# local
+# ##############################
+if [[ -f "$HOME/.bashrc.local" ]]; then
+    . "$HOME/.bashrc.local"
+fi
+
+if [[ -f "$HOME/.bash_profile.local" ]]; then
+    . "$HOME/.bash_profile.local"
+fi

@@ -9,6 +9,14 @@
 # Defaults    env_reset,timestamp_timeout=12
 
 
+# set hostname
+# _hostname="0283"
+# sudo scutil --set ComputerName "$_hostname"
+# sudo scutil --set LocalHostName "$_hostname"
+# sudo scutil --set HostName "$_hostname"
+# dscacheutil -flushcache && sudo dscacheutil -flushcache  # flush dns cache
+
+
 # sublime symlinks
 sudo ln -sf '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl
 sudo ln -sf /usr/local/bin/subl /usr/local/bin/edit
