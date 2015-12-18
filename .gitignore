@@ -1,3 +1,5 @@
 .DS_Store
 
 files_from_home/.zshrc.include
+files_from_home/.bash_profile.local
+files_from_home/.bashrc.local

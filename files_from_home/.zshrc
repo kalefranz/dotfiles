@@ -5,7 +5,7 @@ fi
 
 alias localip='/sbin/ifconfig | grep -E -A3 "e(th|n)0" | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | grep -Eo "([0-9]*\.){3}[0-9]*" | grep -v "127.0.0.1"'
 
-function externalip () {
+externalip() {
     TIMEOUT=${1:=3}  # default to 3 second timeout on http connection
 	JSON=$(curl -s -m ${TIMEOUT} http://ipinfo.io/json)
 	IP=$(echo $JSON | gawk 'match($0, /"ip":\s*"([0-9.]+)"/, ary) {print ary[1]}')

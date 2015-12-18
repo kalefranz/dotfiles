@@ -17,6 +17,9 @@ _source_etc_profiled() {
 }
 _source_etc_profiled
 
+
+
+
 # ##############################
 # environment
 # ##############################
@@ -26,7 +29,7 @@ export EDITOR='vim'
 # ##############################
 # ip addresses
 # ##############################
-alias ips='echo $(ifips)'
+alias ips='echo "$(external-ip)"; echo "$(ifips)"'
 
 
 # ##############################
@@ -104,8 +107,21 @@ fi
 
 
 # ##############################
+# go
+# ##############################
+#export GOPATH="$HOME/go"
+
+
+# ##############################
+# java
+# ##############################
+#export JAVA_HOME="$(/usr/libexec/java_home)"
+
+
+# ##############################
 # ruby
 # ##############################
+export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
