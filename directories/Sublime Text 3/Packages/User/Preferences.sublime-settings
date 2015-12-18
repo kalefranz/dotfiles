@@ -34,5 +34,6 @@
 	"show_full_path": true,
 	"spell_check": false,
 	"theme": "Soda Light 3.sublime-theme",
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"show_minimap": false
 }

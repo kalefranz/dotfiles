@@ -9,5 +9,6 @@
     { "keys": ["super+alt+left"], "command": "jump_back" },
     { "keys": ["super+alt+right"], "command": "jump_forward" },
     { "keys": ["super+shift+up"], "command": "swap_line_up" },
+    { "keys": ["super+enter"], "command": "toggle_full_screen" },
     { "keys": ["super+shift+down"], "command": "swap_line_down" }
 ]
