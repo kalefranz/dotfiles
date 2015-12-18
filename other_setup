@@ -2,4 +2,14 @@
 
 # disable gamed, supports protocls for the Game Kit framework
 # https://discussions.apple.com/thread/5521495?start=0&tstart=0
-sudo defaults write /System/Library/LaunchAgents/com.apple.gamed Disabled -bool true
+#sudo defaults write /System/Library/LaunchAgents/com.apple.gamed Disabled -bool true
+# Note: guess this only needs to be done once?
+
+# visudo line to extend sudo timeout
+# Defaults    env_reset,timestamp_timeout=12
+
+
+# sublime symlinks
+sudo ln -sf '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' /usr/local/bin/subl
+sudo ln -sf /usr/local/bin/subl /usr/local/bin/edit
+
