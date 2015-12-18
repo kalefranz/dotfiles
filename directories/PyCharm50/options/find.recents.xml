@@ -1,9 +1,6 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>test_update_context</find>
-      <find>template</find>
-      <find>setup_t</find>
       <find>setup</find>
       <find>setuptools_scm</find>
       <find>header</find>
@@ -31,6 +28,9 @@
       <find>order_rec</find>
       <find>subje</find>
       <find>email_image(</find>
+      <find>package</find>
+      <find>log.er</find>
+      <find>version</find>
     </findStrings>
     <replaceStrings>
       <replace>clean</replace>
