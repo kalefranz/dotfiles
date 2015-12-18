@@ -29,7 +29,7 @@ export EDITOR='vim'
 # ##############################
 # ip addresses
 # ##############################
-alias ips='echo "$(external-ip)"; echo "$(ifips)"'
+alias ips='echo "$(externalip)"; echo "$(ifips)"'
 
 
 # ##############################
@@ -142,3 +142,5 @@ fi
 if [[ -f "$HOME/.bash_profile.local" ]]; then
     . "$HOME/.bash_profile.local"
 fi
+
+ips
