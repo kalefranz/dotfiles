@@ -23,7 +23,11 @@ get_git_branch() {
   # On non-branches, (no branch)
   ref="$(git symbolic-ref HEAD 2> /dev/null | sed -e 's/refs\/heads\///')"
   if [[ "$ref" != "" ]]; then
-    echo "$ref"
+    if [[ ${#ref} -gt 16 ]]; then
+      echo "$ref" | cut -c 1-13  # add ellipsis ... here
+    else
+      echo "$ref"
+    fi
   else
     echo "(no branch)"
   fi
@@ -146,34 +150,16 @@ get_prompt_symbol() {
   fi
 }
 
-sexy_bash_prompt="\[$prompt_bold\]\[$prompt_green\]\u\
-\[$prompt_reset\]\[$prompt_cyan\]@\
-\[$prompt_bold\]\[$prompt_green\]\h\
-\[$prompt_reset\]\[$prompt_cyan\]:\
-\[$prompt_bold\]\[$prompt_blue\]\w\
-\$( is_on_git && \
-  echo -n \"\[$prompt_reset\]\[$prompt_cyan\] | \" && \
-  echo -n \"\[$prompt_bold\]\[$prompt_yellow\]\$(get_git_branch) \" && \
-  echo -n \"\[$prompt_purple\]\$(get_git_status)\" && \
-  echo -n \"\[$prompt_red\]\$(get_git_progress)\" \
-)\n\[$prompt_white\]$(get_prompt_symbol) \[$prompt_reset\]"
-
-__smaller_faster_bash_prompt() {
-    local EXIT="$?"             # This needs to be first
-    local prompt_exit=""
-
-    if [ $EXIT != 0 ]; then
-        prompt_exit="\[${prompt_reset}\]\[${prompt_red}\]($EXIT)"
-    fi
-
-    local prompt_build="\[${prompt_reset}\]\[${prompt_bold}\]\[${prompt_green}\]\u"
-    prompt_build+="\[${prompt_reset}\]\[${prompt_cyan}\]@\[${prompt_bold}\]\[${prompt_green}\]\h"
-    prompt_build+="\[${prompt_reset}\]\[${prompt_cyan}\]:"
-    prompt_build+="\[${prompt_bold}\]\[${prompt_blue}\]\w $(get_prompt_symbol) \[${prompt_reset}\]"
-
-    PS1="${prompt_exit}${prompt_build}"
-}
 
 if [[ $- == *i* ]]; then
-  export PROMPT_COMMAND=__smaller_faster_bash_prompt
+  PS1='$(_exit=$?; [[ $_exit = 0 ]] || echo "\[${prompt_reset}\]\[${prompt_red}\]($_exit)")'
+  PS1+="\[${prompt_reset}\]\[${prompt_bold}\]\[${prompt_green}\]\u"
+  PS1+="\[${prompt_reset}\]\[${prompt_cyan}\]@\[${prompt_bold}\]\[${prompt_green}\]\h"
+  PS1+="\[${prompt_reset}\]\[${prompt_cyan}\]:"
+  PS1+="\[${prompt_bold}\]\[${prompt_blue}\]\w"
+  PS1+='$(is_on_git && echo "\[${prompt_reset}\]\[${prompt_purple}\] *$(get_git_branch)")'
+  PS1+="\[${prompt_reset}\]\[${prompt_bold}\]\[${prompt_white}\] $(get_prompt_symbol)\[${prompt_reset}\] "
 fi
+
+
+
