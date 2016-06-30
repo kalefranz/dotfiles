@@ -1,6 +1,6 @@
 <application>
   <component name="DimensionService">
-    <location key="WELCOME_SCREEN.0.0.1680.1050" x="840" y="491" />
+    <location key="WELCOME_SCREEN.0.0.1680.1050" x="839" y="230" />
     <location key="com.intellij.ide.util.TipDialog.0.0.1680.1050" x="558" y="342" />
     <location key="OptionsEditor.0.0.1680.1050" x="210" y="28" />
     <location key="ftp.server.browser.0.0.1680.1050" x="742" y="269" />
@@ -11,7 +11,7 @@
     <location key="ReplaceDuplicatesPrompt.0.0.1680.1050" x="269" y="509" />
     <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1680.1050" x="578" y="268" />
     <location key="com.intellij.history.integration.ui.views.FileHistoryDialog.0.0.1680.1050" x="100" y="123" />
-    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1680.1050" x="602" y="235" />
+    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1680.1050" x="602" y="23" />
     <location key="SettingsEditor.0.0.1680.1050" x="321" y="177" />
     <location key="FileChooserDialogImpl.0.0.1680.1050" x="627" y="275" />
     <location key="DiffContextDialog.0.0.1680.1050" x="120" y="105" />
@@ -28,12 +28,17 @@
     <location key="findTextDialog.0.0.1440.900" x="514" y="183" />
     <location key="dock-window-1.0.0.1680.1050" x="100" y="123" />
     <location key="#Browse_Repositories.0.0.1680.1050" x="410" y="176" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1680.1050" x="584" y="408" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1680.1050" x="334" y="131" />
+    <location key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog.0.0.1680.1050" x="667" y="421" />
+    <location key="bookmarks.0.0.1680.1050" x="474" y="332" />
+    <location key="CommitChangelistDialog2.0.0.1680.1050" x="480" y="230" />
     <size key="ftp.server.browser.0.0.1680.1050" width="397" height="580" />
     <size key="DiffWindow.0.0.1680.1050" width="1480" height="782" />
-    <size key="GridCell.Tab.0.left.0.0.1680.1050" width="1638" height="332" />
-    <size key="GridCell.Tab.0.center.0.0.1680.1050" width="1638" height="332" />
-    <size key="GridCell.Tab.0.right.0.0.1680.1050" width="1638" height="332" />
-    <size key="GridCell.Tab.0.bottom.0.0.1680.1050" width="1638" height="332" />
+    <size key="GridCell.Tab.0.left.0.0.1680.1050" width="1638" height="418" />
+    <size key="GridCell.Tab.0.center.0.0.1680.1050" width="1638" height="418" />
+    <size key="GridCell.Tab.0.right.0.0.1680.1050" width="1638" height="418" />
+    <size key="GridCell.Tab.0.bottom.0.0.1680.1050" width="1638" height="418" />
     <size key="com.intellij.history.integration.ui.views.FileHistoryDialog.0.0.1680.1050" width="1480" height="782" />
     <size key="DiffContextDialog.0.0.1680.1050" width="1480" height="782" />
     <size key="GridCell.Tab.1.left.0.0.1680.1050" width="1638" height="332" />
@@ -43,6 +48,8 @@
     <size key="DiffContextDialog.0.0.1920.1080" width="1720" height="812" />
     <size key="MultipleFileMergeDialog.0.0.1680.1050" width="1161" height="772" />
     <size key="dock-window-1.0.0.1680.1050" width="1480" height="782" />
+    <size key="bookmarks.0.0.1680.1050" width="732" height="348" />
+    <size key="SettingsEditor.0.0.1680.1050" width="1031" height="671" />
     <extendedState key="com.intellij.history.integration.ui.views.FileHistoryDialog" state="0" />
     <extendedState key="DiffContextDialog" state="0" />
     <extendedState key="DiffWindow" state="0" />

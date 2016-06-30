@@ -9,8 +9,10 @@
       <item value="pycharm5EAP" />
       <item value="pycharm5Beta" />
       <item value="pycharm5" />
+      <item value="pycharm2016.1" />
+      <item value="pycharm2016.1EAP" />
     </knownUpdateChannels>
-    <option name="LAST_TIME_CHECKED" value="1449101764680" />
-    <option name="LAST_BUILD_CHECKED" value="PY-141.2569" />
+    <option name="LAST_TIME_CHECKED" value="1461072400288" />
+    <option name="LAST_BUILD_CHECKED" value="PY-143.1919" />
   </component>
 </application>

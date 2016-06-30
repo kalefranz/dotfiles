@@ -1,7 +1,8 @@
 <application>
   <component name="FileTypeManager" version="16">
-    <ignoreFiles list="*$py.class;*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
+    <ignoreFiles list="*$py.class;*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
+      <mapping ext="css_t" type="CSS" />
       <mapping ext="j2" type="Jinja2" />
       <mapping pattern="sync_centos5_to_s3" type="PLAIN_TEXT" />
       <mapping pattern="sandbox" type="PLAIN_TEXT" />
@@ -42,7 +43,9 @@
       <mapping ext="io" type="PLAIN_TEXT" />
       <mapping ext="aws" type="PLAIN_TEXT" />
       <mapping ext="old" type="PLAIN_TEXT" />
+      <mapping ext="ps1" type="PLAIN_TEXT" />
       <mapping ext="def" type="PLAIN_TEXT" />
+      <mapping ext="bats" type="PLAIN_TEXT" />
       <mapping ext="types" type="PLAIN_TEXT" />
       <mapping pattern="gunicorn" type="Python" />
     </extensionMap>

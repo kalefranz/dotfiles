@@ -433,5 +433,142 @@
         </PathMappingSettings>
       </additional>
     </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.11 (/conda/bin/python2.7)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.11" />
+      <homePath value="/conda/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/continuum/conda" />
+            <root type="simple" url="file:///conda/lib/python2.7" />
+            <root type="simple" url="file:///conda/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file:///conda/lib/python2.7/plat-mac" />
+            <root type="simple" url="file:///conda/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file:///conda/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///conda/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file:///conda/lib/python2.7/site-packages" />
+            <root type="simple" url="file:///conda/lib/python2.7/site-packages/Sphinx-1.3.1-py2.7.egg" />
+            <root type="simple" url="file:///conda/lib/python2.7/site-packages/aeosa" />
+            <root type="simple" url="file:///conda/lib/python2.7/site-packages/gunicorn-19.1.0-py2.7.egg" />
+            <root type="simple" url="jar:///conda/lib/python2.7/site-packages/setuptools-20.7.0-py2.7.egg!/" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/-2048064776" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.11 virtualenv at ~/projects/auxlib/ve" />
+      <type value="Python SDK" />
+      <version value="Python 3.5.1" />
+      <homePath value="$USER_HOME$/projects/auxlib/ve/bin/python" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5/lib-dynload" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/-89198232" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.5.1 virtualenv at ~/projects/auxlib/ve" />
+      <type value="Python SDK" />
+      <version value="Python 3.5.1" />
+      <homePath value="$USER_HOME$/projects/auxlib/ve/bin/python3" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5/lib-dynload" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/plat-darwin" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python3.5/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/1529822155" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 3.5.1 (/usr/local/bin/python3)" />
+      <type value="Python SDK" />
+      <version value="Python 3.5.1" />
+      <homePath value="/usr/local/bin/python3" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages/requests-2.10.0-py3.5.egg" />
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages/PyYAML-3.11-py3.5-macosx-10.11-x86_64.egg" />
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages/pycosat-0.6.1-py3.5-macosx-10.11-x86_64.egg" />
+            <root type="simple" url="file://$USER_HOME$/continuum/conda" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages/Werkzeug-0.11.10-py3.5.egg" />
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages/itsdangerous-0.24-py3.5.egg" />
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages/Flask-0.10.1-py3.5.egg" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/plat-darwin" />
+            <root type="simple" url="file:///usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/lib-dynload" />
+            <root type="simple" url="file:///usr/local/lib/python3.5/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/1437855905" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Python 2.7.11 virtualenv at ~/projects/auxlib/ve (1)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.11" />
+      <homePath value="$USER_HOME$/projects/auxlib/ve/bin/python2.7" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python2.7" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python2.7/lib-dynload" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-darwin" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/lib-tk" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac" />
+            <root type="simple" url="file:///usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/plat-mac/lib-scriptpackages" />
+            <root type="simple" url="file://$USER_HOME$/projects/auxlib/ve/lib/python2.7/site-packages" />
+            <root type="simple" url="file://$USER_HOME$/Library/Caches/PyCharm50/python_stubs/1280276243" />
+            <root type="simple" url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
   </component>
 </application>

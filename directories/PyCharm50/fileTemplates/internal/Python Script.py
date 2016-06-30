@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import logging
+from __future__ import absolute_import, division, print_function
+from logging import getLogger
 
 
-log = logging.getLogger(__name__)
+log = getLogger(__name__)

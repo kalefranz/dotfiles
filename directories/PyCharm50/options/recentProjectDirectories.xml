@@ -2,9 +2,21 @@
   <component name="RecentDirectoryProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/continuum/conda" />
+        <option value="$USER_HOME$/continuum/conda-env" />
+        <option value="$USER_HOME$/projects/auxlib" />
+        <option value="$USER_HOME$/continuum/conda2" />
+        <option value="$USER_HOME$/ttam/hookhandler" />
+        <option value="$USER_HOME$/continuum/conda3" />
+        <option value="$USER_HOME$/projects/virtualenv" />
+        <option value="$USER_HOME$/continuum/yaml" />
+        <option value="$USER_HOME$/continuum/anaconda-cluster" />
+        <option value="$USER_HOME$/continuum/anaconda-server" />
+        <option value="$USER_HOME$/continuum/trialbox" />
+        <option value="$USER_HOME$/continuum/trialbox3" />
+        <option value="$USER_HOME$/continuum/wakari-deploy" />
         <option value="$USER_HOME$/ttam/product" />
         <option value="$USER_HOME$/ttam/transcomm" />
-        <option value="$USER_HOME$/ttam/hookhandler" />
         <option value="$USER_HOME$/ttam/ansible" />
         <option value="$USER_HOME$/ttam/you" />
         <option value="$USER_HOME$/23andme/ansible" />
@@ -14,19 +26,160 @@
         <option value="$USER_HOME$/ttam/23vpc" />
         <option value="$USER_HOME$/ttam/cf-envb" />
         <option value="$USER_HOME$/23andme/you" />
-        <option value="$USER_HOME$/projects/auxlib" />
         <option value="$USER_HOME$/ttam/cloudformation-environmentbase" />
         <option value="$USER_HOME$/ttam/putz" />
       </list>
     </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/projects/auxlib" />
+        <option value="$USER_HOME$/continuum/conda" />
+      </list>
+    </option>
     <option name="names">
       <map>
+        <entry key="$USER_HOME$/continuum/anaconda-server" value="anaconda-server, anaconda-build" />
+        <entry key="$USER_HOME$/continuum/conda" value="conda, conda-build" />
+        <entry key="$USER_HOME$/continuum/conda3" value="conda3, conda-docs" />
         <entry key="$USER_HOME$/ttam/ansible" value="ansible, cron" />
         <entry key="$USER_HOME$/ttam/tropo" value="tropo, 23vpc..." />
       </map>
     </option>
+    <option name="lastPath" value="$USER_HOME$/continuum/conda" />
     <option name="additionalInfo">
       <map>
+        <entry key="$USER_HOME$/continuum/anaconda-cluster">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1919" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1456324294675" />
+              <option name="buildTimestamp" value="1453960800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/anaconda-server">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1919" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1455840810154" />
+              <option name="buildTimestamp" value="1453960800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/conda">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.2370" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1466789485979" />
+              <option name="buildTimestamp" value="1461992400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/conda-env">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.2370" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1466789471984" />
+              <option name="buildTimestamp" value="1461992400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/conda2">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.2370" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1463538353738" />
+              <option name="buildTimestamp" value="1461992400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/conda3">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.2370" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1462989006672" />
+              <option name="buildTimestamp" value="1461992400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/trialbox">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1559" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1455557908622" />
+              <option name="buildTimestamp" value="1450764000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/trialbox3">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1559" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1454362836610" />
+              <option name="buildTimestamp" value="1450764000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/wakari-deploy">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1559" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1452632139385" />
+              <option name="buildTimestamp" value="1450764000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/continuum/yaml">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1919" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1458077605113" />
+              <option name="buildTimestamp" value="1453960800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/auxlib">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.2370" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1466789469563" />
+              <option name="buildTimestamp" value="1461992400000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/projects/virtualenv">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-143.1919" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1462809833924" />
+              <option name="buildTimestamp" value="1453960800000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/ttam/ansible">
           <value>
             <RecentProjectMetaInfo>
@@ -41,11 +194,11 @@
         <entry key="$USER_HOME$/ttam/hookhandler">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="PY-143.1184" />
+              <option name="build" value="PY-143.2370" />
               <option name="productionCode" value="PY" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1450321465859" />
-              <option name="buildTimestamp" value="1449554400000" />
+              <option name="projectOpenTimestamp" value="1462989121131" />
+              <option name="buildTimestamp" value="1461992400000" />
             </RecentProjectMetaInfo>
           </value>
         </entry>

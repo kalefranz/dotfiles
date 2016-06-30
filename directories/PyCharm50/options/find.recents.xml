@@ -1,55 +1,38 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>defaults</find>
-      <find>/res/i</find>
-      <find>receipient</find>
-      <find>recip</find>
-      <find>recipient</find>
-      <find>full</find>
-      <find>application</find>
-      <find>cart_payment</find>
-      <find>BOPaymentCreditCardRecord</find>
-      <find>payment.</find>
-      <find>shipping_method.</find>
-      <find>shipping_line_items</find>
-      <find>cart.</find>
-      <find>email_im</find>
-      <find>email_image</find>
-      <find>payments_cc</find>
-      <find>payments</find>
-      <find>send_order_receipt_email</find>
-      <find>HtmlDirectEmail</find>
-      <find>web/billing_error</find>
-      <find>order_rec</find>
-      <find>subje</find>
-      <find>email_image(</find>
-      <find>package</find>
-      <find>log.er</find>
-      <find>version</find>
-      <find>crypt</find>
-      <find>aux</find>
-      <find>web/email_chage</find>
-      <find>email_change</find>
+      <find>rm_rf</find>
+      <find>errno</find>
+      <find>IOEr</find>
+      <find>n</find>
+      <find>log.debug</find>
+      <find>root_dir</find>
+      <find>.LIST</find>
+      <find>Could not find URL</find>
+      <find>2626</find>
+      <find>egg</find>
+      <find>range</find>
+      <find>os.path</find>
+      <find>exp</find>
+      <find>create_default_packages</find>
+      <find>on_win</find>
+      <find>pkgs_dirs</find>
+      <find>test_symlinks_created_with_env</find>
+      <find>bindir</find>
+      <find>1007</find>
+      <find>fetch_pkg</find>
+      <find>join</find>
+      <find>install.</find>
+      <find>remove_binstar_tokens</find>
+      <find>_true</find>
+      <find>python2</find>
+      <find>pattern</find>
+      <find>43</find>
+      <find>test_channel_order_channel_priority_true</find>
+      <find>tempfile</find>
+      <find>CONDA_</find>
     </findStrings>
     <replaceStrings>
-      <replace>clean</replace>
-      <replace>you</replace>
-      <replace>-official</replace>
-      <replace>region=aws_region</replace>
-      <replace>ntp</replace>
-      <replace>FQDN</replace>
-      <replace>branch_name</replace>
-      <replace>CONDA_ROOT</replace>
-      <replace>/etc/supervisord/supervisord.conf</replace>
-      <replace>core_tools</replace>
-      <replace>launced_vm</replace>
-      <replace>VpcCommonSG</replace>
-      <replace>_packages</replace>
-      <replace>release</replace>
-      <replace>.sandbox.23andme.io</replace>
-      <replace>YOU_PACKAGE_ID</replace>
-      <replace>autorestart = unexpected</replace>
       <replace>YOU_SERVER_NAME</replace>
       <replace>master</replace>
       <replace>vnv</replace>
@@ -63,38 +46,55 @@
       <replace>repo.usw2.23andme.tech</replace>
       <replace>repo_sync</replace>
       <replace>nginx-proxy</replace>
+      <replace>-</replace>
+      <replace>PRE_INSTALL_CONDA</replace>
+      <replace>0.6.1</replace>
+      <replace>raml</replace>
+      <replace>boolify(</replace>
+      <replace>car</replace>
+      <replace>expiration</replace>
+      <replace>auxlib</replace>
+      <replace>:</replace>
+      <replace>meta.</replace>
+      <replace>MyListField</replace>
+      <replace>&quot;&quot;&quot;</replace>
+      <replace>4242.46</replace>
+      <replace>dals(&quot;&quot;&quot;&quot;&quot;&quot;)</replace>
+      <replace>_type</replace>
+      <replace />
+      <replace>prefix</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$USER_HOME$/ttam/you/you</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/you/templates</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/consul/tasks</dir>
-      <dir>$USER_HOME$/ttam/ansible/aws/roles/prepare-for-ami</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/consul</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/common</dir>
-      <dir>$USER_HOME$/ttam/ansible/aws/roles/account-init-phase-2</dir>
-      <dir>$USER_HOME$/ttam/ansible/aws</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/common/tasks</dir>
-      <dir>$USER_HOME$/ttam/you</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/ttam_pg</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/you</dir>
-      <dir>$USER_HOME$/ttam/product/lib23</dir>
-      <dir>$USER_HOME$/ttam/product/data23</dir>
-      <dir>$USER_HOME$/ttam/product/tools/vagrant</dir>
-      <dir>$USER_HOME$/ttam/ansible/aws/host_vars</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/ttam_mysql</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/magento</dir>
-      <dir>$USER_HOME$/ttam/product/config/topologies</dir>
-      <dir>$USER_HOME$/ttam/product/config</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/you-deploy</dir>
-      <dir>$USER_HOME$/ttam/ansible</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/ttam_apache</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles/ttam_mysql/tasks</dir>
-      <dir>$USER_HOME$/23andme/ansible</dir>
-      <dir>$USER_HOME$/ttam/ansible/pb/roles</dir>
-      <dir>$USER_HOME$/ttam/transcomm/transcomm/templates/email</dir>
-      <dir>$USER_HOME$/ttam/transcomm/transcomm</dir>
-      <dir>$USER_HOME$/ttam/product</dir>
+      <dir>$USER_HOME$/continuum/trialbox/welcome</dir>
+      <dir>/conda/lib/python2.7/site-packages/setuptools-19.6.2-py2.7.egg!/setuptools</dir>
+      <dir>$USER_HOME$/continuum/conda-env</dir>
+      <dir>$USER_HOME$/continuum/anaconda-build/binstar_build_client</dir>
+      <dir>$USER_HOME$/continuum/anaconda-server</dir>
+      <dir>/usr/local/Cellar/python/2.7.11/Frameworks/Python.framework/Versions/2.7/lib/python2.7/distutils</dir>
+      <dir>$USER_HOME$/continuum/conda/conda/cli</dir>
+      <dir>$USER_HOME$/continuum/conda-build</dir>
+      <dir>$USER_HOME$/continuum/yaml/raml/ext</dir>
+      <dir>$USER_HOME$/continuum/yaml/raml</dir>
+      <dir>$USER_HOME$/continuum/conda3</dir>
+      <dir>$USER_HOME$/continuum/conda2/tests</dir>
+      <dir>$USER_HOME$/continuum/yaml/_test</dir>
+      <dir>$USER_HOME$/continuum/yaml/ext</dir>
+      <dir>$USER_HOME$/continuum/yaml</dir>
+      <dir>$USER_HOME$/projects/auxlib/tests</dir>
+      <dir>$USER_HOME$/continuum/conda3/docs/_theme/react/styles/bootstrap</dir>
+      <dir>$USER_HOME$/continuum/conda3/docs/_theme/bootstrap</dir>
+      <dir>$USER_HOME$/continuum/conda2/conda</dir>
+      <dir>$USER_HOME$/continuum/conda2</dir>
+      <dir>$USER_HOME$/continuum/conda-build/conda_build</dir>
+      <dir>/conda/lib/python2.7/distutils</dir>
+      <dir>$USER_HOME$/projects/auxlib/auxlib</dir>
+      <dir>$USER_HOME$/continuum/conda/utils</dir>
+      <dir>$USER_HOME$/continuum/conda/tests</dir>
+      <dir>$USER_HOME$/continuum/conda-env/conda_env</dir>
+      <dir>$USER_HOME$/continuum/conda-env/tests</dir>
+      <dir>$USER_HOME$/continuum/conda</dir>
+      <dir>$USER_HOME$/continuum/conda/conda</dir>
+      <dir>$USER_HOME$/continuum/conda/bin</dir>
     </dirStrings>
   </component>
 </application>
