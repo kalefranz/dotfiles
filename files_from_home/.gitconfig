@@ -1,6 +1,7 @@
 [user]
 	name = Kale Franz
 	email = kfranz@continuum.io
+        signingkey = F62CD988
 [push]
 	default = current
 [pull]
@@ -10,6 +11,8 @@
 	autosetuprebase = always
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
 [core]
 	editor = vim
 	excludesfile = /Users/kfranz/.gitignore_global
@@ -24,6 +27,9 @@
 	enabled = true
 [alias]
     yolo = !git commit -am "$(curl http://whatthecommit.com/index.txt)" && git push -f
+
+    # sign tags
+    tag = tag -s
 
     # compact git log graph
     lol = log --oneline --decorate --graph --all
@@ -52,3 +58,15 @@
     up = !git fetch --all && [[ -z $(git status --porcelain -uno) ]] && git pull --rebase
     bclean = "!f() { git branch --merged ${1-develop} | grep -v " ${1-develop}$" | xargs git branch -d; }; f"
     bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[hub]
+	protocol = ssh
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
