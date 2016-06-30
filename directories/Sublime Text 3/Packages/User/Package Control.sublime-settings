@@ -6,6 +6,8 @@
 	"installed_packages":
 	[
 		"Anaconda",
+		"AutoSoftWrap",
+		"Bats (Bash Automated Testing System)",
 		"BlameHighlighter",
 		"BracketHighlighter",
 		"Diffy",

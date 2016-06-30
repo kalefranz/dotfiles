@@ -27,13 +27,14 @@
 	"margin": 2,
 	"rulers":
 	[
+		79,
 		99
 	],
 	"save_on_focus_lost": true,
 	"shift_tab_unindent": true,
 	"show_full_path": true,
+	"show_minimap": false,
 	"spell_check": false,
 	"theme": "Soda Light 3.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"show_minimap": false
+	"translate_tabs_to_spaces": true
 }
