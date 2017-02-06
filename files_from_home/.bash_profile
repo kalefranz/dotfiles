@@ -143,4 +143,5 @@ if [[ -f "$HOME/.bash_profile.local" ]]; then
     . "$HOME/.bash_profile.local"
 fi
 
-ips
+# conda
+alias smoketest='py.test tests/test_create.py -k create_install'

@@ -26,7 +26,13 @@
 [rerere]
 	enabled = true
 [alias]
-    yolo = !git commit -am "$(curl http://whatthecommit.com/index.txt)" && git push -f
+    message = !curl -sS http://whatthecommit.com/index.txt
+
+    yolo = "!f() { git commit -am \"$(curl -sS http://whatthecommit.com/index.txt | tee /dev/stderr)\" && git push; }; f"
+
+    punch = push -f
+
+    hard = reset HEAD --hard
 
     # sign tags
     tag = tag -s
@@ -52,6 +58,8 @@
     # instead of git stash and git stash pop, use git save and git undo when switching branches
     save = !git add -A && git commit -m 'SAVEPOINT'
     popsave = reset HEAD~1 --mixed
+
+    checkout-pr = "!f() { git fetch origin pull/${1}/head:pr-${1} && git checkout pr-${1}; }; f"
  
     # aliases from http://haacked.com/archive/2014/07/28/github-flow-aliases/
     # git bdone will clean up any merged branches and put you back on the develop branch
