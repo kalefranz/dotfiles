@@ -3,17 +3,16 @@
 [[ -n "$HUDSON_URL" ]] && export TERM=xterm
 
 
-prompt_bold=$(tput bold)
-prompt_reset=$(tput sgr0)
+__ps1_reset="\[\033[0m\]"
+__ps1_bold="\[\033[1m\]"
 
-prompt_black=$(tput setaf 0)
-prompt_red=$(tput setaf 1)
-prompt_green=$(tput setaf 2)
-prompt_yellow=$(tput setaf 3)
-prompt_blue=$(tput setaf 4)
-prompt_purple=$(tput setaf 5)
-prompt_cyan=$(tput setaf 6)
-prompt_white=$(tput setaf 7)
+__ps1_red="\[\033[31m\]"
+__ps1_green="\[\033[32m\]"
+__ps1_yellow="\[\033[33m\]"
+__ps1_blue="\[\033[34m\]"
+__ps1_magenta="\[\033[35m\]"
+__ps1_cyan="\[\033[36m\]"
+__ps1_white="\[\033[37m\]"
 
 
 git_dir=""
@@ -141,7 +140,7 @@ get_git_status() {
 }
 
 # Symbol displayed at the line of every prompt
-get_prompt_symbol() {
+__ps1_prompt_symbol() {
   # If we are root, display `#`. Otherwise, `$`
   if [[ "$UID" == 0 ]]; then
     echo "#"
@@ -150,15 +149,26 @@ get_prompt_symbol() {
   fi
 }
 
+__ps1_exit_code() {
+  local _exit=${1:-0}
+  if [ $_exit -ne 0 ]; then
+    printf "\033[31m($_exit)\033[0m"
+  fi
+}
 
-if [[ $- == *i* ]]; then
-  PS1='$(_exit=$?; [[ $_exit = 0 ]] || echo "\[${prompt_reset}\]\[${prompt_red}\]($_exit)")'
-  PS1+="\[${prompt_reset}\]\[${prompt_bold}\]\[${prompt_green}\]\u"
-  PS1+="\[${prompt_reset}\]\[${prompt_cyan}\]@\[${prompt_bold}\]\[${prompt_green}\]\h"
-  PS1+="\[${prompt_reset}\]\[${prompt_cyan}\]:"
-  PS1+="\[${prompt_bold}\]\[${prompt_blue}\]\w"
-  PS1+='$(is_on_git && echo "\[${prompt_reset}\]\[${prompt_purple}\] *$(get_git_branch)")'
-  PS1+="\[${prompt_reset}\]\[${prompt_bold}\]\[${prompt_white}\] $(get_prompt_symbol)\[${prompt_reset}\] "
+
+# sudo ln -s /usr/local/etc/bash_completion.d/git-prompt.sh /etc/profile.d/30-git-prompt.sh
+# sudo ln -s /usr/local/etc/bash_completion.d/git-completion.bash /etc/profile.d/git-completion.sh
+
+
+if [ -n "${BASH_VERSION:+x}" ] && [[ $- == *i* ]]; then
+  PS1="\$(__ps1_exit_code \$?)"
+  PS1+="${__ps1_reset}${__ps1_bold}${__ps1_green}\u"
+  PS1+="${__ps1_reset}${__ps1_cyan}@${__ps1_bold}${__ps1_green}\h"
+  PS1+="${__ps1_reset}${__ps1_cyan}:"
+  PS1+="${__ps1_bold}${__ps1_blue}\w"
+  PS1+="${__ps1_reset}${__ps1_magenta}"'$(__git_ps1 " %s")'
+  PS1+="${__ps1_reset}${__ps1_bold}${__ps1_white} \$(__ps1_prompt_symbol)${__ps1_reset} "
 fi
 
 

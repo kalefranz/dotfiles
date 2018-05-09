@@ -2,14 +2,13 @@
 # /etc/profile.d/
 # ##############################
 _source_etc_profiled() {
-    if [[ -d /etc/profile.d/ ]]; then
-        # from CentOS 5 /etc/profile
+    if [ -d /etc/profile.d/ ]; then
         for i in /etc/profile.d/*.sh ; do
             if [ -r "$i" ]; then
                 if [ "${-#*i}" != "$-" ]; then
-                    . $i
+                    . "$i"
                 else
-                    . $i >/dev/null 2>&1
+                    . "$i" >/dev/null 2>&1
                 fi
             fi
         done
@@ -18,7 +17,11 @@ _source_etc_profiled() {
 _source_etc_profiled
 
 
+alias start-work='sudo mv /opt/cisco/amp/ampdaemon /opt/cisco/amp/ampdaemon.nothanks && sudo pkill amp'
+alias stop-work='sudo mv /opt/cisco/amp/ampdaemon.nothanks /opt/cisco/amp/ampdaemon'
+alias conda-bug-count='curl -sS https://api.github.com/search/issues?q=repo:conda/conda+is:issue+is:open+label:type:bug | jq .total_count'
 
+alias conda-dev='eval "$(python -m conda init --dev)"'
 
 # ##############################
 # environment
@@ -82,8 +85,8 @@ shopt -s cmdhist
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTFILESIZE=10000
-HISTSIZE=10000
+HISTFILESIZE=100000
+HISTSIZE=100000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -121,15 +124,15 @@ fi
 # ##############################
 # ruby
 # ##############################
-export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# export RBENV_ROOT=/usr/local/var/rbenv
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 
 # ##############################
 # python
 # ##############################
-export PATH=$PATH:/usr/local/share/pypy
-export PATH=$PATH:/conda/bin
+# export PATH=$PATH:/usr/local/share/pypy
+# export PATH=$PATH:/conda/bin
 
 
 # ##############################
@@ -145,3 +148,25 @@ fi
 
 # conda
 alias smoketest='py.test tests/test_create.py -k create_install'
+
+
+# ##############################
+# conda
+# ##############################
+
+# . $HOME/miniconda/etc/profile.d/conda.sh  # commented out by conda initialize
+
+
+# export PATH="/conda44/bin:$PATH"
+# source $HOME/miniconda/etc/profile.d/conda.sh  # commented out by conda initialize
+# conda activate  # commented out by conda initialize
+
+# . $HOME/miniconda/etc/profile.d/conda.sh  # commented by conda initialize
+# export PATH="$HOME/devenv/bin:$PATH"
+
+# eval "$('/Users/kfranz/miniconda/bin/conda' shell.bash hook)"
+
+# export PATH="$HOME/conda/bin:$PATH"
+# source  $HOME/miniconda/etc/profile.d/conda.sh
+
+

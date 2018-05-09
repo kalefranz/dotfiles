@@ -36,4 +36,5 @@ PERL_MM_OPT="INSTALL_BASE=/Users/kale/perl5"; export PERL_MM_OPT;
 
 export EDITOR=vim
 
-alias ssha='ssh -i ~/.ssh/ansible-insecure ansible@\b'
+
+
